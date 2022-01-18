@@ -13,15 +13,20 @@ const nomes = [
   "Gabriel",
   "Carlos",
 ];
-let escolhido = "Pedro";
-
-function check(array) {
-    const escolhe = nomes.find((nomes) => nomes === escolhido)
-    if (escolhe) {
-        console.log(`O nome ${escolhido} não esta no array`);
+//soma = numSoma.reduce((soma, i) => {
+    let name = "Pedro"
+    const result = nomes.find((nome) => nome === name)
+    if (result === name) {
+        console.log(`O nome ${name} esta no array`);
     } else {
-        console.log(`O nome ${escolhido} esta no array`);
+      console.log(`O nome ${name} não esta no array`);
     }
-}
+    
 
-check(nomes);
+
+   // if (escolhe) {
+      //  console.log(`O nome ${escolhido} não esta no array`);
+    //} else {
+     //   console.log(`O nome ${escolhido} esta no array`);
+    //}
+

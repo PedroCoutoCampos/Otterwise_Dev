@@ -15,3 +15,14 @@ const frutas = [
   { nome: "Água 5L", quantidade: 2, valor: 5.99 },
   { nome: "Pão Francês", quantidade: 8, valor: 0.63 },
 ];
+const numSoma = [];
+let soma = 0;
+let valueUnd = 0;
+for (let i = 0; i < frutas.length; i++) {
+    valueUnd = frutas[i].valor
+    numSoma.push(frutas[i].quantidade * frutas[i].valor);
+};
+soma = numSoma.reduce((soma, i) => {
+    return soma + i;
+});
+console.log(soma);
