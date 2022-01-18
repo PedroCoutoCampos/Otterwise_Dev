@@ -96,48 +96,22 @@ function venda(array, codProduto, qtdProduto) {
   for (let i = 0; i < array.length; i++) {
     if (array[i].cod === codProduto && array[i].stock >= qtdProduto) {
         //console.log(`${qtdProduto}x ${array[i].name} = R$ ${soma}`);
-        let carrinho = [
-          {
-            name: array[i].name,
-            price: array[i].price,
-            Qtd : qtdProduto
-        }]
-        console.log(carrinho);
-        let soma = array[i].price * qtdProduto;
-        console.log(soma);
-        array[i].stock = array[i].stock - qtdProduto;
-      } else if (array[i].cod === codProduto && array[i].stock < qtdProduto) {
-        console.log(
+        var carrinho = [
+            {name: array[i].name},
+            {price: array[i].price},
+            {Qtd : qtdProduto}
+          ]
+          array[i].stock = array[i].stock - qtdProduto;
+        } else if (array[i].cod === codProduto && array[i].stock < qtdProduto) {
+          console.log(
             `Não temos temos ${qtdProduto}x de ${array[i].name}, temos apenas ${array[i].stock}x`
             );
+          }
         }
-  }
+        let totalCarrinho = carrinho[2].Qtd * carrinho[1].price;
+        console.log(`Valor a total do carrinho é ${totalCarrinho}`);
 }
 venda(dados, 1053, 8);
 venda(dados, 1045, 2);
 venda(dados, 1056, 2);
 
-/*
-function checkProduto(array) {
-  const carrinho = []
-  let soma = [0]
-  
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].name === compra1 && array[i].stock === "sim") {
-        com1 = array.indexOf(array[i])
-    }
-    if (array[i].name === compra2 && array[i].stock === "sim") {
-        com2 = array.indexOf(array[i])
-    }
-    if (array[i].name === compra3 && array[i].stock === "sim") {
-        com3 = array.indexOf(array[i])
-    }
-}
-//console.log(carrinho);
-console.log(dados[com1].price); 
-console.log(dados[com1]); 
-
-console.log(`Preço total do carrinho é R$ ${soma}`);
-}
-checkProduto(dados);
-*/
