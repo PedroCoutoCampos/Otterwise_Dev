@@ -1,0 +1,102 @@
+@import "_variables", "_styles", "index.scss";
+
+.contact {
+  padding: auto;
+  margin-bottom: 50px;
+
+}
+@media (min-width: 992px) {
+  .contact {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.contact-text {
+  color: $linkColor;
+  background-color: $backgroundColor;
+  margin-top: 133px;
+
+  @media (min-width: 992px) {
+    .contact-text {
+      height: 71px;
+      width: 235px;
+    }
+  }
+}
+.contact-text-title {
+  font-family: DM Sans;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .contact-text-title {
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+  }
+}
+.contact-text-description {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .contact-text-description {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    text-align: center;
+  }
+}
+.form-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #26292d;
+  padding: 24px;
+  height: 546px;
+  width: 447px;
+  margin-right:auto;
+  margin-left: auto;
+}
+.box-text-title {
+  text-align: left;
+  color: #ffffff;
+  width: 400px;
+  font-size: DM Sans;
+}
+
+.box-text {
+  height: 60px;
+  width: 399px;
+  background: #1c1e22;
+  color: #a0a0a1;
+  font-size: DM Sans;
+}
+.box-text-mess {
+  height: 150px;
+  width: 399px;
+  background: #1c1e22;
+  color: #a0a0a1;
+  font-size: DM Sans;
+}
+.box-button {
+  background: #5c62ec;
+  height: 48px;
+  width: 399px;
+  padding: 16px, 8px, 16px, 8px;
+}
