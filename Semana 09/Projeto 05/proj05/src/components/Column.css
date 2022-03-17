@@ -1,0 +1,12 @@
+.titleColumn {
+  display: flex;
+  justify-content:left;
+  align-items: flex-start;
+  gap: 24px;
+  height: 220px;
+  width: 300px;
+  padding-left: 10px;
+  background: #59B4D1;
+}
+
+
