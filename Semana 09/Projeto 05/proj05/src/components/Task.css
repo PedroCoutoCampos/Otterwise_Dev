@@ -1,3 +1,25 @@
-.task {
-    color: black;
+.name {
+  width: 280px;
+  height: 90px;
+  background: rgb(247, 247, 247);
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  margin-bottom: 20px;
+
+}
+.descrisao {
+  display: flex;
+  flex-direction: row;
+}
+.linha2 {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+
+}
+.linha3 {
+  margin-top: 0px;
+  margin-left: 14px;
+  background: #59B4D1;
+
 }

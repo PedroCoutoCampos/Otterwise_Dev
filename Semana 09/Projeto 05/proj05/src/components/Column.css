@@ -1,12 +1,20 @@
-.titleColumn {
+.geral {
   display: flex;
-  justify-content:left;
-  align-items: flex-start;
+  justify-content: left;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
-  height: 220px;
+  height: auto;
   width: 300px;
   padding-left: 10px;
-  background: #59B4D1;
+  background: #59b4d1;
+  color: white;
 }
-
-
+.button {
+  background: #59b4d1;
+  border-radius: 2px;
+  color: white;
+  border: #59b4d1;
+  text-align: center;
+}

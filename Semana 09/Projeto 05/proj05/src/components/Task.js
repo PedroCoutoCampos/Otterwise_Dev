@@ -1,15 +1,15 @@
 import "./Task.css";
 
-const Task = (props) => {
-    const { title, icon, text } = props;
-    return (
-      <div className="Task">
-        <p>{title}</p>
-        <h3>{icon}</h3> 
-        <button>{text}</button>
-
+const Task = ({ name, image, label }) => {
+  return (
+    <div className="name">
+      <p>{name}</p>
+      <div className="descrisao">
+        <p className="linha2">{image}</p>
+        <p className="linha3">{label}</p>
       </div>
-    );
-  };
-  
-  export default Task;
+    </div>
+  );
+};
+
+export default Task;
