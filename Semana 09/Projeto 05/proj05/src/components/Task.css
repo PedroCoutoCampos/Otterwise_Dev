@@ -1,25 +1,26 @@
 .name {
-  width: 280px;
-  height: 90px;
+  width: 320px;
+  height: auto;
   background: rgb(247, 247, 247);
   color: rgb(0, 0, 0);
   padding-left: 10px;
   margin-bottom: 20px;
+  font-weight: 500;
 
 }
 .descrisao {
   display: flex;
   flex-direction: row;
 }
-.linha2 {
+.image {
   display: flex;
   align-items: center;
   margin-top: 0px;
-
+  width: 20px;
+  height: 20px;
 }
-.linha3 {
+.label {
   margin-top: 0px;
   margin-left: 14px;
-  background: #59B4D1;
-
+  background: #ffffff;
 }

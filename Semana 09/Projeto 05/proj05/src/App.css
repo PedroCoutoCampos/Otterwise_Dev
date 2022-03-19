@@ -1,9 +1,56 @@
-
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: auto;
+  width: 400px;
+  padding-left: 40px;
+  gap: 30px;
   border: 0;
 }
+.button {
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  width: auto;
+  height: 20px;
+  font-weight: 700;
+}
+.cardOne {
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 10px;
+  background: #59b4d1;
+  color: white;
+}
+.bOne {
+  background: #59b4d1;
+  border: #59b4d1;
+}
+.cardTwo {
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 10px;
+  background: #d0935a;
+  color: white;
+}
+.bTwo {
+  background: #d0935a;
+  border: #d0935a;
+}
+.cardTree {
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  height:auto;
+  gap: 10px;
+  background: #945ad1;
+  color: white;
+}
+.bTree {
+  background: #945ad1;
+  border: #945ad1;
+  
+} 

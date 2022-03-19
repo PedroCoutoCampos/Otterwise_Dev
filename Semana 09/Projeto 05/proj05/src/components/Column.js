@@ -1,15 +1,20 @@
 import "../components/Column.css";
 import Task from "./Task";
-import Female from "../icons/Female.svg"
-const Column = ({ icon, title, showIcon, showTitle, name}) => {
+const Column = ({
+  icon,
+  title,
+  showIcon,
+  showTitle,
+  name,
+  img,
+  textButton,
+}) => {
   return (
     <div className="geral">
-        {showIcon && <p>{icon}</p>}
-        {showTitle && <h3>{title}</h3>}
-        <Task name={name}
-        image={<img src={Female} alt="Female"></img>} label ={<button className="button">Label</button>}>
-        </Task>
-        </div>
+      {showIcon && <p>{icon}</p>}
+      {showTitle && <h3>{title}</h3>}
+      <Task name={name} image={img} label={textButton}></Task>
+    </div>
   );
 };
 

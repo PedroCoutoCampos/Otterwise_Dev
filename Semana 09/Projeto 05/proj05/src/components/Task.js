@@ -5,8 +5,8 @@ const Task = ({ name, image, label }) => {
     <div className="name">
       <p>{name}</p>
       <div className="descrisao">
-        <p className="linha2">{image}</p>
-        <p className="linha3">{label}</p>
+        <p className="image">{image}</p>
+        <p className="label">{label}</p>
       </div>
     </div>
   );

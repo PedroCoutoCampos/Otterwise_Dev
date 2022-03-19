@@ -5,16 +5,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
-  height: auto;
-  width: 300px;
-  padding-left: 10px;
-  background: #59b4d1;
-  color: white;
+  font-weight: 700;
 }
-.button {
-  background: #59b4d1;
-  border-radius: 2px;
-  color: white;
-  border: #59b4d1;
-  text-align: center;
-}
+
