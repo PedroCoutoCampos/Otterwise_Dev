@@ -1,3 +1,13 @@
+body {
+  background-image: url(./icons/fundo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 790px;
+  padding: 10px;
+  left: 215px;
+  background-color:#E1E8ED;
+}
 
 .card {
   display: flex;
