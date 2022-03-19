@@ -1,3 +1,4 @@
+
 .card {
   display: flex;
   flex-direction: row;
@@ -6,7 +7,7 @@
   width: 400px;
   padding-left: 40px;
   gap: 30px;
-  border: 0;
+  border-radius: 10px;
 }
 .button {
   border-radius: 2px;
@@ -20,6 +21,7 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  height: 330px;
   gap: 10px;
   background: #59b4d1;
   color: white;
@@ -32,6 +34,7 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  height: 330px;
   gap: 10px;
   background: #d0935a;
   color: white;
@@ -44,7 +47,7 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  height:auto;
+  height: auto;
   gap: 10px;
   background: #945ad1;
   color: white;
@@ -52,5 +55,17 @@
 .bTree {
   background: #945ad1;
   border: #945ad1;
-  
-} 
+}
+.cardFour {
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  gap: 10px;
+  background: #59d090;
+  color: white;
+}
+.bFour {
+  background: #59d090;
+  border: #59d090;
+}
