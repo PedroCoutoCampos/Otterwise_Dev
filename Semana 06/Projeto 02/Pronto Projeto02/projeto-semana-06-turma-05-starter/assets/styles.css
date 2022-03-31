@@ -1,0 +1,293 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-image: url("./images/header-bg.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 60px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #505f98;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+  color: #37447e;
+}
+.logo-footer {
+  color: #37447E;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 50%;
+}
+
+.intro-title {
+  font-size: 50px;
+  line-height: 66px;
+  color: #091133;
+  margin-bottom: 20px;
+}
+
+.intro-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #505f98;
+  margin-bottom: 69px;
+}
+
+.intro-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.button {
+  line-height: 26px;
+  font-size: 16px;
+  border: 2px solid #111b47;
+  border-radius: 2px;
+  min-width: 189px;
+}
+
+.button__primary {
+  background-color: #111b47;
+  color: white;
+}
+
+.button__outlined {
+  background-color: transparent;
+  color: #091133;
+}
+
+.sad-woman {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 109px 0;
+}
+
+.sad-woman-blocks {
+  display: flex;
+  gap: 30px;
+}
+
+.sad-woman-content-title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+}
+
+.sad-woman-content-description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6f7cb2;
+  padding-bottom: 80px;
+}
+
+.sad-woman-blocks-item-title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+.sad-woman-blocks-item-description {
+  font-size: 12px;
+  line-height: 18px;
+  color: #5d6970;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 10em;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.img-about {
+  width: 400px;
+  height: 300px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6f7cb2;
+}
+
+.about-title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+}
+
+.scrolled {
+  background-color: white;
+  transition: ease 0.5s;
+
+}
+.section-bg {
+  background: url(./images/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pricing-title {
+  padding-top: 285px;
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+}
+
+.pricing-content-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 35.82px;
+  width: 65ch;
+  color: #6f7cb2;
+}
+
+.pricing-price {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  letter-spacing: 1px;
+  color: #222f65;
+}
+
+.pricing-subtext {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 60px;
+  color: #37447e;
+}
+
+.pricing-sub {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 9.03px;
+  color: #5d6970;
+}
+
+.buttonbelow {
+  margin-bottom: 172.14px;
+}
+.navbarFooter {
+  top: 0;
+  width: 100%;
+  padding: 12px 0;
+  background: #E7ECFF;  ;
+
+}
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+  }
+
+.navbar-link {
+  display: flex;
+  gap: 60px;
+  color: #929ECC;
+  
+}
+.navbar-icon {
+  display: flex;
+  gap: 60px;
+  
+}
+.linha  {
+  border-top: 1px solid #CDD1D4;
+  
+}
+
+.navbar-links-footer {
+  display: flex;
+  height: 24px;
+  width: 133px;
+  left: 165px;
+  top: 4480px;
+  border-radius: nullpx;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #939EA4;
+
+}
+
+.button__footer{
+  background-color: #111b47;
+  color: white;
+  width: 109px;
+}
