@@ -1,11 +1,9 @@
 import "./Task.css";
 
-const Task = ({ name, image, label }) => {
+const Task = ({ image, label }) => {
   return (
-    <div className="name">
-      <p>{name}</p>
       <div className="descrisao">
-        <p className="image">{image}</p>
+        <img className="image">{image}</img>
         <p className="label">{label}</p>
       </div>
     </div>
