@@ -26,7 +26,7 @@ export default function Criarpets() {
         <h1>Cadastro pets</h1>
       </div>
       <div>
-        <form onSubmit={SubmitForm}>
+        <form onSubmit={SubmitForm} className="formCadas">
           <label htmlFor="name">Nome:</label>
           <input type="text" name="name" />
           <label htmlFor="breed">Raça:</label>
