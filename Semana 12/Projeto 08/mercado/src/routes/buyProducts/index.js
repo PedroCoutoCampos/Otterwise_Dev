@@ -17,14 +17,14 @@ const BuyProducts = () => {
   ));
 
   return (
-    <div className="BuyProducts">
-      <Link className="Cards" to="/Products">
-        <Button colorScheme="blue" variant='outline'>
+    <>
+      <Link className="button" to="/Products">
+        <Button colorScheme='blue'>
           <Text>Carrinho</Text>
         </Button>
       </Link>
       {products}
-    </div>
+    </>
   );
 };
 

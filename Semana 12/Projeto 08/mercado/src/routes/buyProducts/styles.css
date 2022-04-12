@@ -1,7 +1,6 @@
-
-.BuyProducts {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
+

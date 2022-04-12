@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Real } from "../../ConfigSystem/ConfigSystem.js";
-
+import "./styles.css"
 import {
   Box,
   Container,
@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 
 const CartProduct = (props) => {
-  
+
   const { img, name, id, price } = props;
   const [Quantidade, setQuantidade] = useState(0);
 
@@ -38,11 +38,11 @@ const CartProduct = (props) => {
 
   return (
     <div className="CardProduct">
-      <Container
-        display="flex"
-        flexDirection="row"
-        margin="50px"
+      <div><Container
         padding="20px"
+        align="center"
+        width="100%"
+        height="100%"
       >
         <Box width="150px" id={id}>
           <Heading mb={10}>{name}</Heading>
@@ -56,10 +56,10 @@ const CartProduct = (props) => {
             Preço {Real(price)}
           </Text>
           <Text fontSize="xl" fontWeight="600"></Text>
-          <NumberInput
+          <NumberInput className="numeral"
+            color="blue"
             size="md"
             maxW="50%"
-            alignItems="center"
             defaultValue={1}
             min={0.5}
             max={10}
@@ -75,7 +75,7 @@ const CartProduct = (props) => {
           <Button
             mt="24px"
             color="white"
-            backgroundColor= "blue"
+            backgroundColor="blue"
             onClick={() => {
               handleClick(img, name, id, price, Quantidade);
               toast({
@@ -91,7 +91,7 @@ const CartProduct = (props) => {
           </Button>
         </Box>
       </Container>
-    </div>
+      </div></div >
   );
 };
 

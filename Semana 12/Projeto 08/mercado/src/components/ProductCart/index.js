@@ -61,21 +61,21 @@ const ProductCart = () => {
         >
           {cart.map((item) => {
             return (
-              <Box width="150px" id={item.id} colorScheme="blue">
-                <Heading mb={10}>{item.name}</Heading>
+              <Box width="150px" id={item.id} colorScheme="blue" align="center">
+                <Heading align="center" mb={10}>{item.name} </Heading>
                 <Image
                   align="center"
                   maxHeight="120px"
                   maxWidth="150px"
                   src={item.img}
                 ></Image>
-                <Text fontSize="xl" fontWeight="600">
+                <Text fontSize="xl" fontWeight="600" align="center">
                   Preço Unitário: {Real(item.price)}
                 </Text>
-                <Text fontSize="xl" fontWeight="600">
+                <Text fontSize="xl" fontWeight="600" align="center">
                   Total a pagar: {Real(item.price * item.Quantidade)}
                 </Text>
-                <Text fontSize="xl" fontWeight="600">
+                <Text fontSize="xl" fontWeight="600" align="center">
                   Quantidade: {Real(item.Quantidade)}
                 </Text>
               </Box>
