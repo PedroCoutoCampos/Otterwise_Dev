@@ -1,9 +1,8 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { postPet } from "../services/pets";
 
-export default function Cadastrarpets() {
+export default function Criarpets() {
   const navigate = useNavigate();
 
   const SubmitForm = async (event) => {
@@ -24,7 +23,7 @@ export default function Cadastrarpets() {
   return (
     <>
       <div>
-        <h1>Cadastro Pets</h1>
+        <h1>Cadastro pets</h1>
       </div>
       <div>
         <form onSubmit={SubmitForm}>
@@ -46,7 +45,7 @@ export default function Cadastrarpets() {
           </select>
           <label htmlFor="image">Imagem:</label>
           <input type="url" name="image" />
-          <button>Cadastrar Pet</button>
+          <button>Criar Pet</button>
         </form>
       </div>
     </>

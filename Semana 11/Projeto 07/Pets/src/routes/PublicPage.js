@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-import { listPets } from "../services/pets";
+import { getPets } from "../services/pets";
 
 export default function Listarpets() {
   const [listarPets, setlistarPets] = useState([]);
   useEffect(() => {
     const request = async () => {
-      const response = await listPets();
+      const response = await getPets();
       setlistarPets(response.data.pets);
     };
     request();
