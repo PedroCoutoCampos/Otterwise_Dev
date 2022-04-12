@@ -1,5 +1,4 @@
-.numeral {
-    border-color: none;
-    box-shadow: none;
-    border-radius: none;
+.CardProduct {
+  display: flex;
+  justify-content: center;
 }

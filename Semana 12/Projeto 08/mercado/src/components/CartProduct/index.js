@@ -56,7 +56,7 @@ const CartProduct = (props) => {
             Preço {Real(price)}
           </Text>
           <Text fontSize="xl" fontWeight="600"></Text>
-          <NumberInput className="numeral"
+          <NumberInput
             color="blue"
             size="md"
             maxW="50%"
