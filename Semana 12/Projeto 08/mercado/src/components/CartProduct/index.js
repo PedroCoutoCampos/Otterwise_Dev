@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Real } from "../../config/Config/config";
+import { Real } from "../../ConfigSystem/ConfigSystem.js";
 
 import {
   Box,
@@ -17,26 +17,27 @@ import {
 } from "@chakra-ui/react";
 
 const CartProduct = (props) => {
+  
   const { img, name, id, price } = props;
-  const [Quanti, setQuanti] = useState(0);
+  const [Quantidade, setQuantidade] = useState(0);
 
   const toast = useToast();
 
-  const handleClick = (img, name, id, price, Quanti) => {
-    const data = { img, name, id, price, Quanti };
+  const handleClick = (img, name, id, price, Quantidade) => {
+    const data = { img, name, id, price, Quantidade };
     const cart = JSON.parse(localStorage.getItem(`cart`) || "[]");
     cart.push(data);
     localStorage.setItem(`cart`, JSON.stringify(cart));
   };
 
   const handleChange = (event) => {
-    setQuanti(event);
+    setQuantidade(event);
   };
 
-  console.log(Quanti);
+  console.log(Quantidade);
 
   return (
-    <div>
+    <div className="CardProduct">
       <Container
         display="flex"
         flexDirection="row"
@@ -62,7 +63,7 @@ const CartProduct = (props) => {
             defaultValue={1}
             min={0.5}
             max={10}
-            value={Quanti}
+            value={Quantidade}
             onChange={handleChange}
           >
             <NumberInputField />
@@ -72,21 +73,21 @@ const CartProduct = (props) => {
             </NumberInputStepper>
           </NumberInput>
           <Button
-            size="lg"
-            colorScheme="green"
             mt="24px"
+            color="white"
+            backgroundColor= "blue"
             onClick={() => {
-              handleClick(img, name, id, price, Quanti);
+              handleClick(img, name, id, price, Quantidade);
               toast({
-                title: "item add",
-                description: "add in to car",
+                title: "Item Adicionado ao Carrinho",
+                description: "Adicionado no carrinho",
                 status: "success",
-                duration: 9000,
+                duration: 1000,
                 isClosable: true,
               });
             }}
           >
-            Add in Cart
+            Adicionar no Carrinho
           </Button>
         </Box>
       </Container>

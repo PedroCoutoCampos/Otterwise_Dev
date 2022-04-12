@@ -1,10 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
 
-import BuyProducts from "./routers/BuyProducts/BuyProducts";
-import Products from "./routers/Products/Products";
+import BuyProducts from "./routes/buyProducts";
+import Products from "./routes/Products";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Route path="/" element={<BuyProducts />} />
         <Route path="/Products" element={<Products />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
