@@ -1,6 +1,6 @@
 import { Heading } from "@chakra-ui/react";
 
-import "./style.css";
+import "./Header.css";
 
 const Header = () => {
   return (

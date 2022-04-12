@@ -11,7 +11,7 @@ import {
   import { useState } from "react";
   
   import { Link } from "react-router-dom";
-  import { Real } from "../../Config/configsystem";
+  import { Real } from "../../config/Config/config";
   
   const ProductCart = () => {
     const storageCart = JSON.parse(localStorage.getItem(`cart`) || "[]");

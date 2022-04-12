@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Real } from "../../Config/configsystem";
+import { Real } from "../../config/Config/config";
 
 import {
   Box,

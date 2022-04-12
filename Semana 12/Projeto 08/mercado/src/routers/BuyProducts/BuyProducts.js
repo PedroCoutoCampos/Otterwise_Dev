@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 import { Text, Button } from "@chakra-ui/react";
 
-import CartProduct from "../../components/CartProduct";
-import ApiFruits from "../../services/ApiFruits";
+import Compras from "../../components/Compras/Compras";
+import Frutas from "../../services/Frutas/Frutas";
 
 const BuyProducts = () => {
-  const products = ApiFruits.map((product) => (
-    <CartProduct
+  const products = Frutas.map((product) => (
+    <Compras
       id={product.id}
       name={product.name}
       img={product.img}

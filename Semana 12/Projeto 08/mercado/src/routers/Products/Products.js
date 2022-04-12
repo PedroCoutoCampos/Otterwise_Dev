@@ -1,11 +1,13 @@
 import { Container } from "@chakra-ui/react";
-import ProductCart from "../../components/ProductCart";
+
+
+import CarrinhoProd from "../../components/Carrinho/CarrinhoProd";
 
 const Products = () => {
   return (
     <div>
       <Container display="flex" padding="20px">
-        <ProductCart />
+        <CarrinhoProd />
       </Container>
     </div>
   );
