@@ -34,8 +34,8 @@ http://127.0.0.1:3000/brands
 
 ```
 
-![Info Brand](https://raw.githubusercontent.com/CarlosHenrique2/APICars/main/public/images/DOC/BrandsID.PNG)
+![Info Brand](https://raw.githubusercontent.com/PedroCoutoCampos/Otterwise_Dev/Semana_13/Projeto_09/main/public/images/DOC/BrandsID.PNG)
 
-![Info Cars](https://raw.githubusercontent.com/CarlosHenrique2/APICars/main/public/images/DOC/CarsID.PNG)
+![Info Cars](https://raw.githubusercontent.com/PedroCoutoCampos/Otterwise_Dev/Semana_13/Projeto_09/public/images/DOC/CarsID.PNG)
 
-![Info Config Postman](https://raw.githubusercontent.com/CarlosHenrique2/APICars/main/public/images/DOC/Information.PNG)
+![Info Config Postman](https://raw.githubusercontent.com/PedroCoutoCampos/Otterwise_Dev/Semana_13/Projeto_09/public/images/DOC/Information.PNG)
