@@ -1,9 +1,23 @@
 {
-  "name": "Projeto 09",
+  "name": "estudo-de-caso",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node app",
+
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^3.11.0"
+  },
   "dependencies": {
-    "fastify": "^3.28.0"
+    "@prisma/client": "^3.11.0",
+    "fastify": "^3.27.4",
+    "fastify-cors": "^6.0.3",
+    "fastify-multer": "^2.0.2",
+    "fastify-static": "^4.6.0"
   }
 }
