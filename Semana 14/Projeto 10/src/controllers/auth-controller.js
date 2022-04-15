@@ -11,7 +11,7 @@ export const signup = async (req, reply) => {
   try {
     const password = await hashPassword(pass);
 
-    const { password: hashedPassword, ...user } = await prisma.user.create({
+    const { password: hashedPassword, ...user1 } = await prisma.user1.create({
       data: {
         name,
         email,
@@ -19,7 +19,7 @@ export const signup = async (req, reply) => {
       },
     });
 
-    reply.send(user);
+    reply.send(user1);
   } catch (error) {
     console.log(error);
     reply.status(400).send({ error: `User already exists!` });
@@ -28,22 +28,22 @@ export const signup = async (req, reply) => {
 export const login = async (req, reply) => {
   try {
     const { email, password } = req.body;
-    let user = await prisma.user.findUnique({
+    let user1 = await prisma.user1.findUnique({
       where: { email },
     });
     // { where: { email } }
 
-    if (!user) {
+    if (!user1) {
       return reply.status(401).send({ error: "Invalid email or password" });
     }
 
-    if (!(await comparePassword(password, user.password))) {
+    if (!(await comparePassword(password, user1.password))) {
       return reply.status(401).send({ error: "Invalid email or password" });
     }
 
-    let { password: pass, ...data } = user;
+    let { password: pass, ...data } = user1;
     return reply.send({
-      user: data,
+      user1: data,
       accessToken: await createAccessToken(data),
     });
   } catch (error) {
