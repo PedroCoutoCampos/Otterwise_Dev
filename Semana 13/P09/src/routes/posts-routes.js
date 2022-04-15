@@ -2,8 +2,8 @@ import { publicDecrypt } from "crypto";
 import multer from "fastify-multer";
 import path from "path";
 
-import * as CarsController from "../controllers/Carro-controller.js";
-import * as BrandsController from "../controllers/Marca-controller.js";
+import * as CarsController from "../controllers/Cars-controller.js";
+import * as BrandsController from "../controllers/Brands-controller.js";
 
 const storage = multer.diskStorage({
   destination: (req, res, cb) => {
@@ -20,45 +20,45 @@ const upload = multer({ storage });
 const routes = [
   {
     method: "GET",
-    url: "/carro",
+    url: "/cars",
     handler: CarsController.GET,
   },
   {
     method: "POST",
-    url: "/carro",
+    url: "/cars",
     preHandler: upload.single("cover"),
     handler: CarsController.POST,
   },
   {
     method: "PUT",
-    url: "/carro",
+    url: "/cars",
     handler: CarsController.PUT,
   },
   {
     method: "DELETE",
-    url: "/carro",
+    url: "/cars",
     handler: CarsController.DELETE,
   },
 
   // brand
   {
     method: "GET",
-    url: "/marca",
+    url: "/brands",
     handler: BrandsController.GET,
   },
   {
     method: "POST",
-    url: `/marca`,
+    url: `/brands`,
     handler: BrandsController.POST,
   },
   {
     method: "PUT",
-    url: `/marca`,
+    url: `/brands`,
     handler: BrandsController.PUT,
   },
   {
     method: "DELETE",
-    url: `/marca`,
+    url: `/brands`,
     handler: BrandsController.DELETE,
   },
 ];

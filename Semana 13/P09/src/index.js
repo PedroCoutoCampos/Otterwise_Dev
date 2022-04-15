@@ -1,7 +1,7 @@
 import server from './config/server.js'
 
 
-server.get('/posts', function (request, reply) {
+server.get('/', function (request, reply) {
   reply.send({ posts: [] })
 })
 
