@@ -10,12 +10,14 @@ export const GET = async function (_, reply) {
 };
 
 export const POST = async (req, reply) => {
-  const { name, year, image_url } = req.body;
+  const { name, year,marca_id, image_url } = req.body;
+  console.log(req.body);
   try {
     const post = await prisma.carro.create({
       data: {
         name,
         year,
+        marca_id,
         image_url,
       },
     });

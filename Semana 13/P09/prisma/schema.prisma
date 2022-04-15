@@ -7,15 +7,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model carro {
+model Carro {
   id            Int    @id @default(autoincrement())
   name          String @db.VarChar(50)
   year          String @db.VarChar(50)
+  marcas        Marca  @relation(fields: [marca_id], references: [id])
+  marca_id      Int
   image_url     String
 }
 
 
-model marca {
-   id            Int    @id @default(autoincrement())
+model Marca {
+  id            Int    @id @default(autoincrement())
   name          String @db.VarChar(50)
+  carros        Carro[]
 }
