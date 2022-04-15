@@ -1,0 +1,22 @@
+{
+  "name": "p09",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "fastify": "^3.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prima": "^0.0.1",
+    "prisma": "^3.12.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "description": ""
+}
