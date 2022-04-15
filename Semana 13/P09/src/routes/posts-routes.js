@@ -20,45 +20,45 @@ const upload = multer({ storage });
 const routes = [
   {
     method: "GET",
-    url: "/cars",
+    url: "/carro",
     handler: CarsController.GET,
   },
   {
     method: "POST",
-    url: "/cars",
+    url: "/carro",
     preHandler: upload.single("cover"),
     handler: CarsController.POST,
   },
   {
     method: "PUT",
-    url: "/cars",
+    url: "/carro",
     handler: CarsController.PUT,
   },
   {
     method: "DELETE",
-    url: "/cars",
+    url: "/carro",
     handler: CarsController.DELETE,
   },
 
   // brand
   {
     method: "GET",
-    url: "/brands",
+    url: "/marca",
     handler: BrandsController.GET,
   },
   {
     method: "POST",
-    url: `/brands`,
+    url: `/marca`,
     handler: BrandsController.POST,
   },
   {
     method: "PUT",
-    url: `/brands`,
+    url: `/marca`,
     handler: BrandsController.PUT,
   },
   {
     method: "DELETE",
-    url: `/brands`,
+    url: `/marca`,
     handler: BrandsController.DELETE,
   },
 ];
