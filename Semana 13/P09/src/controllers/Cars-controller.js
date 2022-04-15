@@ -10,13 +10,12 @@ export const GET = async function (_, reply) {
 };
 
 export const POST = async (req, reply) => {
-  const { name, year, brand_id, image_url } = req.body;
+  const { name, year, image_url } = req.body;
   try {
     const post = await prisma.carro.create({
       data: {
         name,
         year,
-        brand_id,
         image_url,
       },
     });
@@ -29,7 +28,7 @@ export const POST = async (req, reply) => {
 };
 
 export const PUT = async (req, reply) => {
-  const { id, name, year, brands_id, image_url } = req.body;
+  const { id, name, year, image_url } = req.body;
   try {
     const put = await prisma.carro.update({
       where: {
@@ -38,7 +37,6 @@ export const PUT = async (req, reply) => {
       data: {
         name,
         year,
-        brands_id,
         image_url,
       },
     });
