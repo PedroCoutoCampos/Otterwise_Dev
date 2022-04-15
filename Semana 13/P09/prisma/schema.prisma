@@ -8,13 +8,14 @@ datasource db {
 }
 
 model carro {
-  id        Int    @id @default(autoincrement())
-  name      String @db.VarChar(50)
-  year      String @db.VarChar(50)
-  image_url String
+  id            Int    @id @default(autoincrement())
+  name          String @db.VarChar(50)
+  year          String @db.VarChar(50)
+  image_url     String
 }
 
+
 model marca {
-  id   Int    @id @default(autoincrement())
-  name String @db.VarChar(50)
+   id            Int    @id @default(autoincrement())
+  name          String @db.VarChar(50)
 }
