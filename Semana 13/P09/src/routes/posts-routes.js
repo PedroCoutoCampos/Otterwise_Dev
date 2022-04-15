@@ -2,8 +2,8 @@ import { publicDecrypt } from "crypto";
 import multer from "fastify-multer";
 import path from "path";
 
-import * as CarsController from "../controllers/Cars-controller.js";
-import * as BrandsController from "../controllers/Brands-controller.js";
+import * as CarsController from "../controllers/Carro-controller.js";
+import * as BrandsController from "../controllers/Marca-controller.js";
 
 const storage = multer.diskStorage({
   destination: (req, res, cb) => {
